@@ -1,0 +1,10 @@
+body {
+  background-image: url("./back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #daedff;
+}
+
+.table {
+    background-color: white;
+}
