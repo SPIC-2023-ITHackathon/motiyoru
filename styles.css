@@ -1,0 +1,63 @@
+/* ページ全体に背景画像を設定 */
+body {
+    background-image: url('sakurair.jpg'); /* 画像のファイル名を正確に指定する */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* フォーム全体のスタイル */
+form {
+    max-width: 800px; /* 大きくするための幅の調整 */
+    padding: 40px; /* 大きくするための余白の調整 */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ラベルのスタイル */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* 入力フィールドのスタイル */
+input[type="date"],
+input[type="text"] {
+    width: calc(100% - 20px); /* 幅を調整 */
+    padding: 15px; /* パディングを増やす */
+    margin-bottom: 20px; /* 下の余白を調整 */
+    border: none; /* ボーダーを削除 */
+    border-radius: 8px; /* 角丸に */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    box-sizing: border-box;
+    outline: none; /* フォーカス時の枠線を削除 */
+    font-size: 18px; /* フォントサイズを調整 */
+}
+
+
+
+/* サブミットボタンのスタイル */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4; /* ピンクの色 */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff5c9e; /* ホバー時の色 */
+}
+
+
