@@ -1,0 +1,63 @@
+body {
+  background-image: url("./back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #daedff;
+}
+
+.table {
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 60%;
+  height: 50%;
+}
+
+.table tbody {
+  text-align: center;
+}
+
+.table td {
+  padding: 1%;
+  font-size: 1.2em; /* 例：フォントサイズを1.2emに設定 */
+}
+
+.product {
+  width: 40%;
+}
+
+.quantity {
+  width: 14%;
+}
+
+.delete {
+  width: 6%;
+}
+
+.name {
+  width: 80%;
+  height: 90%;
+}
+
+.pull-menu {
+  text-align: right;
+  align-items: center;
+  width: 60%;
+  height: 90%;
+}
+
+tfoot {
+  text-align: center; /* テキストの中央揃え */
+}
+
+.title {
+  padding: 3%;
+}
+
+h1 {
+  background-color: #fee9f8;
+  box-shadow: 0 6px 0 4px #fff;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+}
