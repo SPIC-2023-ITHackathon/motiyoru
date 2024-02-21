@@ -1,0 +1,8 @@
+body {
+    background-color: #daedff;
+    background-image: url(./sakuraBranch.png),url(./sakuraBranch\ \(2\).png);
+    background-repeat: no-repeat,no-repeat;
+    background-size: 300px,300px;
+    background-position: right top,left bottom;
+}
+
