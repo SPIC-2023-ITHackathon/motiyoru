@@ -6,3 +6,26 @@ body {
     background-position: right top,left bottom;
 }
 
+.schedule{
+    /* 位置指定 */
+    padding: 5px;
+    width: 50px;
+    margin: 0 5%;
+    
+    /* 背景の色指定 */
+    background-color: #FEE9F8;
+    box-shadow: 0 2px 0 2px #fff;
+    border-radius: 5px;
+}
+.detail{
+    /* 位置 */
+    width: auto;
+    margin: 2% 20%;
+    /* 背景の色指定 */
+    background-color: #fff;
+    border-radius: 5px;
+}
+#things{
+    background-color: #fff;
+    
+}
