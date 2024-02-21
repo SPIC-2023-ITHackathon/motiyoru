@@ -7,14 +7,28 @@ body {
 h1 {
     /* 位置指定 */
     padding: 5px;
-    width: 450px;
-    margin: 30px auto;
-    
+    width: 40vw;
+    margin: 40px  auto 0 auto;
+    /* サイズ */
+    font-size: 3vw;
     /* 背景の色指定 */
     background-color: #FEE9F8;
     box-shadow: 0 6px 0 4px #fff;
     border-radius: 5px;
     /* テキスト */
     text-align: center;
-
+    /* 重ねる */
+    position: relative;
 }
+
+#sakura {
+    /* 位置指定 */
+    margin: 0 auto;
+    top: 20px;
+    right: 0px;
+    /* サイズ */
+    width: 60%;
+    /* 重ねる */
+    position: absolute;
+}
+
