@@ -11,14 +11,17 @@
   );
 
   $arr = array(
-    "res" => array(
-      [
-        "id" => $id,
-        "date" => $date,
-        "budget" => $budget,
-        "location" => $location,
-      ]
-    )
+    [
+      "id" => $id,
+      "date" => $date,
+      "budget" => $budget,
+      "location" => $location,
+      "attendList" => array(
+          "name" => array_fill(0, 5, ""),
+          "isAttend" => array_fill(0, 5, "NG"),
+          "memo" => array_fill(0, 5, "")
+      )
+    ]
   );
   $arr = json_encode($arr);
   file_put_contents("db.json" , $arr);
@@ -26,7 +29,6 @@
   $json = file_get_contents('./db.json');
   $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
   $arr = json_decode($json,true);
-  $arr = $arr["res"];
 ?>
 
 <!DOCTYPE html>
