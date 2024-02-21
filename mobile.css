@@ -4,7 +4,7 @@ body {
     background-image:  url(./sakuratree.png),url(./sakurafubuki.png);
     background-repeat: no-repeat,repeat-y;
     background-size: 80%,100%;
-    background-position:  left bottom,0;
+    background-position:  left bottom 30px,0;
     /* スクロールを止める */
     overflow: hidden;
 }
