@@ -1,7 +1,7 @@
 <?php
   $date = $_POST["date"];
-  $money = $_POST["moeny"];
-  $map = $_POST["map"];
+  $budget = $_POST["budget"];
+  $location = $_POST["location"];
   $id = preg_replace_callback(
     '/x|y/',
     function($m) {
@@ -15,8 +15,8 @@
       [
         "id" => $id,
         "date" => $date,
-        "money" => $money,
-        "map" => $map,
+        "budget" => $budget,
+        "location" => $location,
       ]
     )
   );
@@ -38,7 +38,7 @@
 </head>
 <body>
       <p>日時:<?=$arr[0]["date"] ?></p>
-      <p>一人当たりの予算:<?=$arr[0]["money"] ?></p>
-      <p>場所:<?=$arr[0]["map"] ?></p>
+      <p>一人当たりの予算:<?=$arr[0]["budget"] ?></p>
+      <p>場所:<?=$arr[0]["location"] ?></p>
 </body>
 </html>
