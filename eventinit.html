@@ -9,18 +9,23 @@
 </head>
 <body>
 
-<form action="./event-init-resolute-view.php" method="post">
-    <label for="date">日付:</label>
-    <input type="date" id="date" name="date"><br><br>
+<div class="container">
+    <!-- 画像を表示するimg要素を追加 -->
+    <img src="Rectangle 56.png" alt="サクラの木">
 
-    <label for="budget">予算:</label>
-    <input type="text" id="budget" name="budget"><br><br>
+    <form action="./event-init-resolute-view.php" method="post">
+        <label for="datetime">when:</label>
+        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+        
+        <label for="budget">cost:</label>
+        <input type="text" id="budget" name="budget"><br><br>
 
-    <label for="location">場所:</label>
-    <input type="text" id="location" name="location"><br><br>
+        <label for="location">where:</label>
+        <input type="text" id="location" name="location"><br><br>
 
-    <input type="submit" value="確定">
-</form>
+        <input type="submit" value="確定">
+    </form>
+</div>
 
 </body>
 </html>
