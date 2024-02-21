@@ -5,59 +5,105 @@ body {
   background-color: #daedff;
 }
 
+.title {
+  padding: 4px 2%;
+  h1 {
+    background-color: #fee9f8;
+    box-shadow: 0 6px 0 4px #fff;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+  }
+}
+
 .table {
   background-color: white;
   border-radius: 5px;
   margin: 0 auto;
   width: 60%;
   height: 50%;
-}
+  padding: 8px 32px;
+  #product {
+    width: 80%;
+  }
+  #quantity {
+    width: 20%;
+  }
 
-.table tbody {
-  text-align: center;
-}
-
-.table td {
-  padding: 1%;
-  font-size: 1.2em; /* 例：フォントサイズを1.2emに設定 */
-}
-
-.product {
-  width: 40%;
-}
-
-.quantity {
-  width: 14%;
-}
-
-.delete {
-  width: 6%;
+  tr {
+    text-align: center;
+  }
 }
 
 .name {
   width: 80%;
-  height: 90%;
+  height: 2em;
+  margin: 1em 10%;
+  border-style: none;
+  border: 2px solid #7a7a7a;
+  border-radius: 0.2em;
 }
 
 .pull-menu {
+  width: 7em;
+  font-size: medium;
   text-align: right;
-  align-items: center;
-  width: 60%;
-  height: 90%;
+  height: 2.5em;
 }
 
 tfoot {
   text-align: center; /* テキストの中央揃え */
 }
 
-.title {
-  padding: 3%;
+.save {
+  padding: 5px 20px; /* 上下左右の余白を調整 */
+  font-size: 16px; /* フォントサイズを大きく */
+  font-weight: bold;
+  background-color: #fee9f8;
+  border-radius: 0.2em;
+  border: none;
 }
 
-h1 {
-  background-color: #fee9f8;
-  box-shadow: 0 6px 0 4px #fff;
-  border-radius: 5px;
+/* 
+tbody{
   text-align: center;
-  width: 30%;
 }
+td {
+  padding: 1%;
+  font-size: 1.2em;
+} */
+/* thの商品名 */
+/* #product {
+  width: 40%;
+} */
+
+/* thの個数 */
+/* #quantity {
+  width: 14%;
+} */
+
+/* .name {
+  width: 80%;
+  height: 90;
+  margin: 0 10%;
+  border-style: none;
+  border: 2px solid #7a7a7a;
+  border-radius: 0.2em;
+} */
+
+/* .pull-menu {
+  text-align: right;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  margin: 0 7%;
+} */
+/* 
+.save {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fee9f8;
+  border-radius: 0.2em;
+  border: none;
+} */

@@ -10,7 +10,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="need_list.css" />
+    <link rel="stylesheet" href="./need_list.css" />
     <title>必要なものリスト</title>
   </head>
   <body>
@@ -21,9 +21,8 @@
       <table class="table">
         <thead>
           <tr>
-            <th class="product">商品名</th>
-            <th class="quantity">個数</th>
-            <th class="delete"></th>
+            <th id="product">商品名</th>
+            <th id="quantity">個数</th>
           </tr>
         </thead>
         <tbody>
@@ -50,7 +49,7 @@
         <tfoot>
           <tr>
             <td colspan="3">
-              <button type="submit">保存</button>
+              <button type="submit" class="save">保存</button>
             </td>
           </tr>
         </tfoot>
