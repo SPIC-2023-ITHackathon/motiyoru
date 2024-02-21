@@ -1,35 +1,32 @@
-/* ページ全体に背景画像を設定 */
+/* ページ全体のスタイル */
 body {
-    background-image: url('sakurair.jpg'); /* 画像のファイル名を正確に指定する */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-image: url('Rectangle 54.png'); /* 画像のファイル名を正確に指定する */
+    margin: 0;
+    background-color: #daedff;
 }
 
-/* フォーム全体のスタイル */
+/* コンテナのスタイル */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/* フォームのスタイル */
 form {
-    max-width: 800px; /* 大きくするための幅の調整 */
-    padding: 40px; /* 大きくするための余白の調整 */
+    max-width: 400px; /* 幅を調整 */
+    width: 100%; /* コンテンツの幅を調整 */
+    padding: 40px; /* 余白の調整 */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: auto; /* 右側の余白を自動調整 */
+    margin-left: -400px; /* 左側の余白を追加 */
 }
 
-
-
-/* ラベルのスタイル */
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
 
 /* 入力フィールドのスタイル */
-input[type="date"],
+input[type="datetime-local"],
 input[type="text"] {
     width: calc(100% - 20px); /* 幅を調整 */
     padding: 15px; /* パディングを増やす */
@@ -41,8 +38,6 @@ input[type="text"] {
     outline: none; /* フォーカス時の枠線を削除 */
     font-size: 18px; /* フォントサイズを調整 */
 }
-
-
 
 /* サブミットボタンのスタイル */
 input[type="submit"] {
@@ -59,5 +54,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #ff5c9e; /* ホバー時の色 */
 }
-
-
