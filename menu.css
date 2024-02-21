@@ -6,7 +6,8 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
-#a{
+
+#a {
     margin: 0 auto;
     width: 70%;
     height: 100vh;
@@ -23,9 +24,9 @@ h1 {
     /* 位置指定 */
     padding: 5px;
     width: 10em;
-    margin: 20px  auto 0 auto;
+    margin: 20px auto 0 auto;
     /* サイズ */
-    font-size: 3vw;
+    font-size: 3.5vw;
     /* 背景の色指定 */
     background-color: #FEE9F8;
     box-shadow: 0 6px 0 4px #fff;
@@ -39,7 +40,7 @@ h1 {
 #sakura {
     /* 位置指定 */
     margin: 0 auto;
-    top: 20px;
+    top: 30px;
     right: 0px;
     /* サイズ */
     width: 60%;
@@ -47,9 +48,9 @@ h1 {
     position: absolute;
 }
 
-ul{
+ul {
     display: flex;
-    height: 90%;
+    height: 110%;
     text-align: center;
     padding: 0;
     align-items: center;
@@ -61,18 +62,20 @@ li {
     list-style-type: none;
     /* 横並びにする */
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 30px;
     width: calc(100% /3);
+    font-size: large;
 }
+
 li>img {
     width: 100%;
 }
 
-#bag,#person,#link{
+#bag,
+#person,
+#link {
     /* 背景 */
     background-color: #FEE9F8;
     border-radius: 5px;
-    background-size: auto; 
-    /* サイズ */
+    background-size: auto;
 }
-
