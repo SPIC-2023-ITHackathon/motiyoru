@@ -20,7 +20,11 @@
           "name" => array_fill(0, 5, ""),
           "isAttend" => array_fill(0, 5, "NG"),
           "memo" => array_fill(0, 5, "")
-      )
+      ),
+      "needList" => array(
+        "name" => array_fill(0, 5, ""),
+        "quantity" => array_fill(0, 5, ""),
+      ),
     ]
   );
   $arr = json_encode($arr);
