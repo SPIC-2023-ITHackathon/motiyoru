@@ -1,7 +1,7 @@
 <?php
   $date = $_POST["date"];
-  $money = $_POST["moeny"];
-  $map = $_POST["map"];
+  $budget = $_POST["budget"];
+  $location = $_POST["location"];
   $id = preg_replace_callback(
     '/x|y/',
     function($m) {
@@ -11,14 +11,17 @@
   );
 
   $arr = array(
-    "res" => array(
-      [
-        "id" => $id,
-        "date" => $date,
-        "money" => $money,
-        "map" => $map,
-      ]
-    )
+    [
+      "id" => $id,
+      "date" => $date,
+      "budget" => $budget,
+      "location" => $location,
+      "attendList" => array(
+          "name" => array_fill(0, 5, ""),
+          "isAttend" => array_fill(0, 5, "NG"),
+          "memo" => array_fill(0, 5, "")
+      )
+    ]
   );
   $arr = json_encode($arr);
   file_put_contents("db.json" , $arr);
@@ -26,7 +29,6 @@
   $json = file_get_contents('./db.json');
   $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
   $arr = json_decode($json,true);
-  $arr = $arr["res"];
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +40,7 @@
 </head>
 <body>
       <p>日時:<?=$arr[0]["date"] ?></p>
-      <p>一人当たりの予算:<?=$arr[0]["money"] ?></p>
-      <p>場所:<?=$arr[0]["map"] ?></p>
+      <p>一人当たりの予算:<?=$arr[0]["budget"] ?></p>
+      <p>場所:<?=$arr[0]["location"] ?></p>
 </body>
 </html>
