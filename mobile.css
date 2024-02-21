@@ -1,23 +1,24 @@
 body {
     background-color: #daedff;
-    background-image: url(./sakuraBranch.png),url(./sakuraBranch\ \(2\).png);
-    background-repeat: no-repeat,no-repeat;
-    background-size: 300px,300px;
-    background-position: right top,left bottom;
+    background-image: url(./sakuraBranch.png), url(./sakuraBranch\ \(2\).png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px, 300px;
+    background-position: right top, left bottom;
 }
 
-.schedule{
+.schedule {
     /* 位置指定 */
     padding: 5px;
     width: 50px;
     margin: 0 5%;
-    
+
     /* 背景の色指定 */
     background-color: #FEE9F8;
     box-shadow: 0 2px 0 2px #fff;
     border-radius: 5px;
 }
-.detail{
+
+.detail {
     /* 位置 */
     width: auto;
     margin: 2% 20%;
@@ -25,7 +26,10 @@ body {
     background-color: #fff;
     border-radius: 5px;
 }
-#things{
+
+#things {
+    height: 200px;
     background-color: #fff;
-    
+    overflow-y: scroll;
+    border: 1px;
 }
