@@ -10,25 +10,26 @@
 <body>
 
 <div class="container">
-    <!-- 画像を表示するimg要素を追加 -->
-    <img src="Rectangle 56.png" alt="サクラの木">
 
-    <form action="./event-init-resolute-view.php" method="post">
-        <label for="datetime">when:</label>
-        <input type="datetime-local" id="datetime" name="datetime"><br><br>
-        
-        <label for="budget">cost:</label>
-        <input type="text" id="budget" name="budget"><br><br>
-
-        <label for="location">where:</label>
-        <input type="text" id="location" name="location" placeholder="ECCコンピュータ専門学校"><br><br>
-
-        <label for="address">address:</label>
-        <input type="text" id="address" name="address" placeholder="大阪市北区中崎西2丁目3番35号"><br><br>
-
-        <input type="submit" value="確定">
-    </form>
+    <div id="mainForm">
+        <form action="./event-init-resolute-view.php" method="post">
+            <label for="datetime">when:</label>
+            <input type="datetime-local" id="datetime" name="datetime"><br><br>
+            
+            <label for="budget">cost:</label>
+            <input type="number" id="budget" name="budget" min="0"><br><br>
+    
+            <label for="location">where:</label>
+            <input type="text" id="location" name="location" placeholder="ECCコンピュータ専門学校"><br><br>
+    
+            <label for="address">address:</label>
+            <input type="text" id="address" name="address" placeholder="大阪市北区中崎西2丁目3番35号"><br><br>
+    
+            <input type="submit" value="確定" id="save">
+        </form>
+    </div>
 </div>
 
 </body>
 </html>
+
