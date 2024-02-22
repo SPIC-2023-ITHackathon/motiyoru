@@ -3,11 +3,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #daedff;
-  /* overflow: hidden; */
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .title {
   padding: 4px 2%;
+  height: 20%;
 }
 
 h1 {
@@ -78,4 +80,12 @@ tfoot {
   background-color: #fee9f8;
   border-radius: 0.2em;
   border: none;
+}
+
+#membeer_screen {
+  height: 100vh;
+}
+
+#detail {
+  height: 60%;
 }
