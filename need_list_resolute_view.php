@@ -6,6 +6,7 @@
   $arr[0]["needList"] = $needList;
   $arr = json_encode($arr);
   file_put_contents("db.json" , $arr);
-  var_dump($arr);
 
+  header("Location: ./menu.php");
+  exit;
 ?>
