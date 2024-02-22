@@ -1,63 +1,58 @@
 body {
-    background-color: #daedff;
-    /* 背景画像の表示 */
-    background-image:  url(./sakuratree.png),url(./sakurafubuki.png);
-    background-repeat: no-repeat,repeat-y;
-    background-size: 80%,100%;
-    background-position:  left bottom 30px,0;
-    /* スクロールを止める */
-    overflow: hidden;
+  background-color: #daedff;
+  /* 背景画像の表示 */
+  background-image: url(./sakuratree.png), url(./sakurafubuki.png);
+  background-repeat: no-repeat, repeat-y;
+  background-size: 80%, 100%;
+  background-position: left bottom 30px, 0;
+  /* スクロールを止める */
+  overflow: hidden;
 }
 
-#mainArea{
-    margin: 0 auto;
-    width: 90%;
-    height: 100vh;
-
-
-}
-#innerArea{
-    margin-top: 30px;
-    height: 50%;
+#mainArea {
+  /* margin: 0 auto; */
+  margin-left: 10%;
+  width: 90%;
+  height: 100vh;
 }
 
-
-#thingsArea{
-    
-    height: 90%;
-
+#innerArea {
+  margin-top: 30px;
 }
+
+/* #thingsArea {
+  margin-top: 50px;
+} */
 
 .schedule {
-    /* 位置指定 */
-    padding: 5px;
-    width: 60px;
-    margin: 0 5%;
+  /* 位置指定 */
+  padding: 5px;
+  width: 60px;
+  margin: 0 5%;
 
-    /* 背景の色指定 */
-    background-color: #FEE9F8;
-    box-shadow: 0 2px 0 2px #fff;
-    border-radius: 5px;
-
-    font-size: larger;
+  /* 背景の色指定 */
+  background-color: #fee9f8;
+  box-shadow: 0 2px 0 2px #fff;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
 }
 
 .detail {
-    /* 位置 */
-    width: auto;
-    margin: 10px 20%;
-    /* 背景の色指定 */
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: large;
+  /* 位置 */
+  width: auto;
+  margin: 5px 20%;
+  /* 背景の色指定 */
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: medium;
 }
 
 #things {
-    /* 持ち物の表示 */
-    width: 70%;
-    height: 200px;
-    background-color: #fff;
-    overflow-y: scroll;
-    border: 1px;
+  /* 持ち物の表示 */
+  width: 60%;
+  height: 200px;
+  background-color: #fff;
+  overflow-y: scroll;
+  border: 1px;
 }
-
