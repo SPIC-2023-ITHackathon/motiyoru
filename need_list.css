@@ -3,10 +3,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #daedff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#need_screen {
+  height: 100vh;
 }
 
 .title {
   padding: 4px 2%;
+  height: 20%;
   h1 {
     background-color: #fee9f8;
     box-shadow: 0 6px 0 4px #fff;
@@ -14,6 +21,10 @@ body {
     text-align: center;
     width: 30%;
   }
+}
+
+#detail {
+  height: 60%;
 }
 
 .table {

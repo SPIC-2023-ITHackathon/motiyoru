@@ -14,46 +14,50 @@
     <title>必要なものリスト</title>
   </head>
   <body>
-    <div class="title">
-      <h1>things</h1>
+    <div id="need_screen">
+      <div class="title">
+        <h1>things</h1>
+      </div>
+      <div id="detail">
+        <form action="./need_list_resolute_view.php" method="post">
+          <table class="table">
+            <thead>
+              <tr>
+                <th id="product">商品名</th>
+                <th id="quantity">個数</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php for($index = 0; $index < 5; $index++):?>
+              <tr>
+                <td>
+                  <input type="text" class="name" name="needList[name][<?=$index?>]" value="<?=$needList["name"][$index] ?>"/>
+                </td>
+                <td>
+                  <select class="pull-menu" name="needList[quantity][<?=$index?>]">
+                    <option value="">個数を選択</option>
+                    <?php for($j = 1; $j <= 10; $j++): ?>
+                      <?php if( strcmp($needList["quantity"][$index], $j ) != 0):?>
+                        <option value="<?=$j?>"><?=$j?></option>
+                      <?php else:?>
+                        <option value="<?=$j?>" selected><?=$j?></option>
+                      <?php endif;?>
+                    <?php endfor;?>
+                  </select>
+                </td>
+              </tr>
+              <?php endfor;?>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  <button type="submit" class="save">保存</button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </form>
+      </div>
     </div>
-    <form action="./need_list_resolute_view.php" method="post">
-      <table class="table">
-        <thead>
-          <tr>
-            <th id="product">商品名</th>
-            <th id="quantity">個数</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php for($index = 0; $index < 5; $index++):?>
-          <tr>
-            <td>
-              <input type="text" class="name" name="needList[name][<?=$index?>]" value="<?=$needList["name"][$index] ?>"/>
-            </td>
-            <td>
-              <select class="pull-menu" name="needList[quantity][<?=$index?>]">
-                <option value="">個数を選択</option>
-                <?php for($j = 1; $j <= 10; $j++): ?>
-                  <?php if( strcmp($needList["quantity"][$index], $j ) != 0):?>
-                    <option value="<?=$j?>"><?=$j?></option>
-                  <?php else:?>
-                    <option value="<?=$j?>" selected><?=$j?></option>
-                  <?php endif;?>
-                <?php endfor;?>
-              </select>
-            </td>
-          </tr>
-          <?php endfor;?>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3">
-              <button type="submit" class="save">保存</button>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </form>
   </body>
 </html>
