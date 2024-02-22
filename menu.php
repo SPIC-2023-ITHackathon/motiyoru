@@ -29,7 +29,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./mobile.php">
               <img id="link" src="link.png" alt="共有するリンク" />link
             </a>
           </li>
