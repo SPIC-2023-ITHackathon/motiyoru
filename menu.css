@@ -24,7 +24,6 @@ body {
 h1 {
   /* 位置指定 */
   padding: 5px;
-  width: 10em;
   margin: 20px auto 0 auto;
   /* サイズ */
   font-size: 3.5vw;
