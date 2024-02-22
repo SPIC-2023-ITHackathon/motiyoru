@@ -23,7 +23,8 @@ body {
 
 h1 {
   /* 位置指定 */
-  padding: 5px;
+  width: fit-content;
+  padding: 0 32px;
   margin: 20px auto 0 auto;
   /* サイズ */
   font-size: 3.5vw;
@@ -46,11 +47,12 @@ h1 {
   width: 60%;
   /* 重ねる */
   position: absolute;
+  z-index: -1;
 }
 
 ul {
   display: flex;
-  height: 100%;
+  height: 80%;
   text-align: center;
   padding: 0;
   align-items: center;
