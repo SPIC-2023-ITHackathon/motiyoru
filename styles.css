@@ -1,83 +1,93 @@
 /* ページ全体のスタイル */
 body {
-    background-color: #daedff;
-    /* 背景画像の表示 */
-    background-image: url(./sakuratree.png), url(./sakurafubuki.png);
-    background-repeat: no-repeat, repeat-y;
-    background-size: 80%, 100%;
-    background-position: left bottom 30px, 0;
-    /* スクロールを止める */
-    overflow: hidden;
-  }
-  
-  /* コンテナのスタイル */
-  .container {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding: 20px; */
-    height: 100vh;
-    width: 90%;
-    margin: 0 auto;
-  }
-  /* フォームのスタイル */
-  form {
-    /* 幅を調整 */
-    max-width: 400px;
-    /* コンテンツの幅を調整 */
-    width: 100%;
-    /* 余白の調整 */
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* 右側の余白を自動調整 */
-    /* margin-right: auto; */
-    /* 左側の余白を追加 */
-    margin-left: 600px;
-  }
-  
-  /* 入力フィールドのスタイル */
-  input[type="datetime-local"],
-  input[type="text"] , input[type="number"] {
-    /* 幅を調整 */
-    width: calc(100% - 20px);
-    /* パディングを増やす */
-    padding: 15px;
-    /* 下の余白を調整 */
-    /* margin-bottom: 20px; */
-    /* ボーダーを削除 */
-    border: none;
-    /* 角丸に */
-    border-radius: 8px;
-    /* 影を追加 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    /* フォーカス時の枠線を削除 */
-    outline: none;
-    /* フォントサイズを調整 */
-    font-size: 18px;
-  }
-  
-  /* サブミットボタンのスタイル */
-  input[type="submit"] {
-      width: 95%;
-      padding: 10px;
-      background-color: #ff69b4;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
-  
-  input[type="submit"]:hover {
-    /* ホバー時の色 */
-    background-color: #ff5c9e;
-  }
-  
-  #mainForm {
-    height: 70%;
-  }
+  background-color: #daedff;
+  /* 背景画像の表示 */
+  background-image: url(./sakuratree.png), url(./sakurafubuki.png);
+  background-repeat: no-repeat, repeat-y;
+  background-size: 80%, 100%;
+  background-position: left bottom 30px, 0;
+  /* スクロールを止める */
+  overflow: hidden;
+}
 
-  
+#mainForm {
+  @media only screen and (max-width: 500px) {
+    margin-top: 40px;
+  }
+}
+
+/* コンテナのスタイル */
+.container {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* padding: 20px; */
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+/* フォームのスタイル */
+form {
+  /* 幅を調整 */
+  max-width: 400px;
+  /* コンテンツの幅を調整 */
+  width: 100%;
+  /* 余白の調整 */
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* 右側の余白を自動調整 */
+  /* margin-right: auto; */
+  /* 左側の余白を追加 */
+  margin-left: 600px;
+
+  @media only screen and (max-width: 500px) {
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* 入力フィールドのスタイル */
+input[type="datetime-local"],
+input[type="text"],
+input[type="number"] {
+  /* 幅を調整 */
+  width: calc(100% - 20px);
+  /* パディングを増やす */
+  padding: 15px;
+  /* 下の余白を調整 */
+  /* margin-bottom: 20px; */
+  /* ボーダーを削除 */
+  border: none;
+  /* 角丸に */
+  border-radius: 8px;
+  /* 影を追加 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  /* フォーカス時の枠線を削除 */
+  outline: none;
+  /* フォントサイズを調整 */
+  font-size: 18px;
+}
+
+/* サブミットボタンのスタイル */
+input[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  /* ホバー時の色 */
+  background-color: #ff5c9e;
+}
+
+#mainForm {
+  height: 70%;
+}
